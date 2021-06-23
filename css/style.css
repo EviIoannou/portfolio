@@ -23,7 +23,7 @@
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    --box-s: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
@@ -236,7 +236,7 @@ header {
     position: relative;
 }
 .intro__img {
-    box-shadow: var(--bs);
+    box-shadow: var(--box-s);
 }
 @media (min-width: 600px) {
     .intro {
@@ -323,7 +323,7 @@ header {
 }
 
 .about-me__img {
-    box-shadow: var(--bs);
+    box-shadow: var(--box-s);
 }
 @media (min-width:600px) {
     .about-me {
