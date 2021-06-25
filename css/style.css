@@ -375,6 +375,21 @@ header {
     overflow: hidden;
 }
 
+.portfolio a {
+    text-decoration: none;
+}
+
+.portfolio__item h3 {
+    background: var(--clr-accent);
+    border-radius: 0.3em;
+    color: var(--clr-light);
+    font-weight: var(--fw-reg);
+    margin: 1em;
+    padding: 0.3em;
+    position: absolute;
+    z-index: 3;
+}
+
 .portfolio__img {
     transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
