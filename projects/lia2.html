@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evi's Portfolio</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/Evi.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="../index.html#services" class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="../index.html#work" class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+           Frontend design <strong>LIA 2</strong> 
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Internship</p>
+        <img src="../images/charpstar.jpg" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <h2>About</h2>
+        <p>My second internship was at a company in Stockholm called <a href="https://www.charpstar.se/">CharpstAR</a> where 
+            I collaborated with one more frontend developer who was also an intern. The purpose 
+            of my 16-week internship was to contribute in creating the frontend for a new platform
+            which will be used by the company for the management of 3D assets. This platform will be used
+            by emplyees with various roles like admin, Quality Assurance team and 3D artists, and of course
+            by clients. The backend was created by a team before us, together with a preliminary 
+            frontend design which needed to be redesigned.
+        </p>
+        <h2>Requirements</h2>
+        <p>Requirements for this projects were established by the company's CEO and CTO, as well as by users after testing and receiving feedback.
+        <p>Basic requirements for the project:</p>
+        <ul>
+            <li>Incorporate the company's graphic profile in the design</li>
+            <li>User-friendly and easy to use interface</li>
+            <li>Create new or change existing components to achieve the previous requirement</li>
+            <li>Identify issues in the code and fix if possible</li>
+            <li>Regularly update platform online on Digital Ocean</li>
+            <li>Document all changes and decisions</li>
+        </ul>
+        <h2>Personal contribution</h2>
+        <p>For this project I mainly worked with <strong>Vue</strong> and <strong>Vuetify</strong>.
+            Basically I needed to translate the UI design from Figma, created by my colleague, to code. 
+            However, I had to make decisions when an element was not possible to create in the code 
+            or could be made different for better result. Such changes were communicated to the rest of the
+            group before being realized.
+        </p>
+        <p> One of my main tasks was to create a new bar graph to display data dynamically. After comparing
+            a few relevant JavaScript libraries that can be used with Vue, I decided to use <strong>Vue-chart js</strong>.
+            I was then able to create a bar graph that displays dynamic data and to even display icons
+            instead of text as labels. These icons were created with <strong>Figma</strong>.
+            Hovering over the bars also gives additional information about each product. 
+            The result was something like this:
+            <img src="../images/bar-graph.png" alt="bar-graph-example" class="project-img">
+        </p>
+        <p>Fix issues in the frontend</p>
+        <p>Used Trello for working in a KANBAN type of board, with labels, descriptions and images.</p>
+        <h2>Demo</h2>
+        <p>As material and code for this project is confidential, unfortunately I can't provide
+            links to finished material or code for the project. I can, however, show you a demo of
+            the components I have worked with in an eventual video call or provide you references from 
+            the company's CEO who was also my mentor.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:evievi@outlook.com" class="footer__link">evievi@outlook.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/evi-ioannou/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/EviIoannou">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/evi_ioannou_/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>

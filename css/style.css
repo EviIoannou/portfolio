@@ -472,3 +472,7 @@ header {
 .portfolio-item-individual a:hover {
     text-decoration: underline;
 }
+
+.portfolio-item-individual .project-img {
+    width: 400px;
+}
