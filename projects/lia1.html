@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evi's Portfolio</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/Evi.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="../index.html#services" class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="../index.html#work" class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+           New frontend <strong>LIA 1</strong> 
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Internship</p>
+        <img src="../images/mentor.jpg" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <h2>About</h2>
+        <p>My first internship was at a consulting company in Gothenburg called Nejla AB for a client, <a href="https://sambruk.se/om-sambruk/">Sambruk</a>. 
+            I worked with company's owner, as well as three more frontend developers also interns.
+            The purpose of my 8-week internship was to contribute in redesigning the frontend of an existing system
+            used by different communities in Sweden in their work with young people. The system has been used for some years now
+            but the intention with this project was to use a different technology for the frontend and make the design more user-friendly
+            and in accorndance with UX guidelines for accessibility. You can find some more information 
+            about the project in Swedish <a href="https://sambruk.se/projektet-som-ledde-fram-till-uka/">here</a>.
+        </p>
+        <h2>Requirements</h2>
+        <p>Requirements for this projects were mostly set by the client and the end users, 
+            i.e. administrative staff in communities that use the system.
+        </p>
+        <p>Basic requirements for the project:</p>
+        <ul>
+            <li>Keep functionality with which staff is familiar and that works well</li>
+            <li>Identify functionality that can be improved in the current system</li>
+            <li>Add new functions and design features</li>
+            <li>User friendly design</li>
+            <li>Accessibility</li>
+        </ul>
+        <h2>Personal contribution</h2>
+        <p>For this project, I worked with <strong>Vue</strong> and <strong>Boostrap-Vue</strong> 
+            for frontend development. I created two components, one of which was a modal (popup dialogue).
+            This was also a type of form, thus would need validating which was done with 
+            <strong>Vee-Validate</strong>, a validation library that works great with Vue. The second component 
+            was a whole page that needed redesign, where staff can see information about the young people in the community and
+            export it to SCB (Statistiska centralbyrån). I first redesigned it to have collapsible areas, making it possible
+            to only view relevant information instead of everything at the same time. I also applied the design
+            principles the group had agreed on in order to provide an accessible and user-friendly experience.
+        </p>
+        <p>In addition, I worked towards the <strong>DRY</strong> (don't repeat yourself) principle as much as I could.
+            Not only did I do that in the code I wrote, but I also adjusted existing Vue components or 
+            JavaScript files (mixins) to write more efficient, non-repetitive code and help my team.
+        </p>
+        <p>Before starting with a new component, a UI design was made with <strong>Figma</strong> to guide the frontend design.
+        I also used this design in order to explain to my colleagues the changes or additions I 
+        would make to agree on these before coding.</p>
+        <p>Last, the team worked with <strong>agile methods</strong> where we would have standup meetings
+        2-3 times per week to discuss our progress and if we needed help or we had some other problem.
+        It also meant taking over tasks that felt interesting, relevant and within my area of expertise
+        but at the same time learning a lot from my colleagues.</p>
+        <h2>Demo</h2>
+        <p>As material and code for this project is confidential, unfortunately I can't provide
+            links to finished material or code for the project. I can, however, show you a demo of
+            the components I have worked with in an eventual video call or provide you references from 
+            the company's owner who was also my mentor.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:evievi@outlook.com" class="footer__link">evievi@outlook.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/evi-ioannou/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/EviIoannou">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/evi_ioannou_/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
