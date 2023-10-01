@@ -16,6 +16,7 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd; 
+    --clr-accent-dark: #10806d; 
     --clr-accent-link: #1dbea3;
 
     --fs-h1: 3rem;
@@ -253,12 +254,12 @@ header {
         grid-area: img;
         min-width: 250px;
         position: relative;
-        z-index: 2;
+        z-index: 2; 
     }
     .section__subtitle--intro {
         align-self: start;
         grid-column: -1 / 1;
-        grid-row: 2;
+        /* grid-row: 2; */
         text-align: right;
         position: relative;
         left: -1.5em;
@@ -299,8 +300,12 @@ header {
 }
 
 .service {
-    max-width: 500px;
+    max-width: 300px;
     margin: 0 auto;
+} .service p {
+    text-align: left;
+} .service h3 {
+    width: auto;
 }
 
 @media (min-width: 800px) {
@@ -367,7 +372,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 2em auto;
 }
 
 .portfolio__item {
@@ -379,12 +384,23 @@ header {
     text-decoration: none;
 }
 
-.portfolio__item h3 {
-    background: var(--clr-accent);
+.portfolio__item h3{
+    background: var(--clr-accent-dark);
     border-radius: 0.3em;
     color: var(--clr-light);
     font-weight: var(--fw-reg);
-    margin: 1em;
+    margin: 1em 0;
+    padding: 0.3em;
+    position: absolute;
+    z-index: 3;
+}
+
+.portfolio__item h4{
+    background: var(--clr-light);
+    border-radius: 0.3em;
+    color: var(--clr-accent-dark);
+    font-weight: var(--fw-reg);
+    margin: 4em 0;
     padding: 0.3em;
     position: absolute;
     z-index: 3;
