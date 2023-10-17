@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evi's Portfolio</title>
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -33,27 +35,46 @@
 
     <section class="intro">
         <h1 class="section__title section__title--intro">
-           My web app <strong>Coffeeverse</strong> 
+            My web app <strong>Coffeeverse</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Examensarbete</p>
+        <p class="section__subtitle section__subtitle--intro">Final project</p>
         <img src="../images/background-coffee.jpg" alt="" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
         <h2>About</h2>
-        <p>"Coffeeverse" was my final project in my studies for Frontend developer at IT-Högskolan 
-            in order to get my degree. It is a web app where one goes to order coffee 
+        <p>"Coffeeverse" was my final project in my studies for Frontend developer at IT-Högskolan
+            in order to get my degree. It is a web app where one goes to order coffee
             and other snacks for "fika" and can choose among different coffee shops in their city.
-            Right now it is functioning in a basic, demonstrative level and the user cannot place 
-            an actual order, but rather a fictional one. 
             It was an idea I have had for a long time so that was the perfect instance to implement it!
         </p>
-        <h2>Requirements</h2>
-        <p>First, I conducted reasearch with some users in order to determine the relevance of the web app 
+        <p>My work consisted of five phases:</p>
+        <ol>
+            <li>User research</li>
+            <li>Analysis of requirements</li>
+            <li>Information architecture</li>
+            <li>UI design</li>
+            <li>Frontend development</li>
+        </ol>
+        <h2>User research</h2>
+        <p>First, I conducted research with some users to determine the relevance of the web application as well as most
+            important
+            features. The first part was an anonymous questionnaire, but with the choice to leave some contact details.
+            The second part
+            was in-depth interviews with two of the responders who were willing to be contacted and talk about their
+            responses. </p>
+        <p>I analysed the data to create two personas and a user journey (<a
+                href="https://www.figma.com/file/yeDlzeM92WoCmzPrGIhzxK/Coffee-app-UX?type=design&node-id=1%3A8&mode=design&t=JWrrETJJL8khHwA3-1">personas
+                and user flow</a>) to guide me in my design and coding.
+            If you are interested, you can take a look at my data analysis in <a
+                href="https://www.figma.com/file/yeDlzeM92WoCmzPrGIhzxK/Coffee-app-UX?type=design&node-id=1%3A8&mode=design&t=JWrrETJJL8khHwA3-1">UX
+                research analysis</a>, in the section "Results".</p>
+        <h2>Analysis of requirements</h2>
+        <p>First, I conducted reasearch with some users in order to determine the relevance of the web app
             as well as most important features. Research was conducted first with a questionnaire and then with two
-            more in-depth interviews. 
+            more in-depth interviews.
         </p>
-        <p>Basic requirements for the project:</p>
+        <p>The most important requirements were:</p>
         <ul>
             <li>A variety of drinks and snacks to choose from</li>
             <li>A variety of coffee shops</li>
@@ -63,28 +84,48 @@
             <li>User is able to review their order status: Time left to delivery, items in order</li>
             <li>Complete order by entering delivery info and paying (not real payment)</li>
             <li>Two options for payment: credit card or swish</li>
-            <li>Feedback to user when order is placed successfully </li>  
+            <li>Feedback to user when order is placed successfully </li>
             <li>User friendly design according to UX guidelines</li>
             <li>Responsive website adjusted to mobile and tablet screens</li>
             <li>App in English</li>
         </ul>
-        <p>As the project was realized within three weeks, some of the basic requirements were not fulfilled.
-            Functions that were important for the website to work were prioritized over enhancement features, but
-            it is definitely a work in progress that will be much improved in the future.
+        <h2>Information architecture</h2>
+        <p>Following user research and documentation of requirements, I created diagrams for the database structure and
+            for the flow of
+            the website's basic functions. For example:</p>
+        <img src="../images/database.png" alt="database">
+        <h2>UI design</h2>
+        <p>For my UI design, I started with a moodboard where I gathered design ideas for my website. I then created
+            different colour
+            palettes and font styles that I could use, always keeping in mind the rules for accessibility. As this
+            project was completed
+            in a limited time, I did not conduct extensive user testing and iterations for my design. However, I tried
+            to get users'
+            feedback whenever possible.</p>
+        <p>In order to create the lo-fi and hi-fi prototypes before programming, I used <strong>Figma</strong>. Images
+            were first edited with <strong>GIMP</strong> to remove unnecessary background and to fix dimensions. The
+            final versions of
+            the images used in the website were created with Figma to add the brand icon.
         </p>
-        <h2>Technology</h2>
-        <p>In order to create the lo-fi and hi-fi prototypes before programming, I used <strong>Figma</strong> . Images were first edited with <strong>GIMP</strong> 
-            to remove unnecessary background and to fix dimensions. The final versions of the images used in the website
-            were created with Figma in order to add the brand icon.
-        </p>
-        <p><strong>Firebase Firestore</strong> was used for storing data about the products in the "Coffeeverse" and fetching them via API in my Vue application. 
-        It was also used to store all the images, as this minimized the storage my app was going to occupy.</p>
-        <p>Frontend development of the web app was done with <strong>Vue js</strong> and <strong>Boostrap-Vue</strong>. 
-            Focus was on organizing the Vue components in an efficient way, applying the DRY (Don't repeat yourself) principle
+        <h2>Frontend development</h2>
+        <p><strong>Firebase Firestore</strong> was used for storing data about the products in the "Coffeeverse" and
+            fetching them via API in my Vue application.
+            It was also used to store all the images, as this minimized the storage my app was going to occupy.</p>
+        <p>Frontend development of the web app was done with <strong>Vue js</strong> and <strong>Boostrap-Vue</strong>.
+            Focus was on organizing the Vue components in an efficient way, applying the DRY (Don't repeat yourself)
+            principle
             and translating the UI design to code, in order to deliver the best experience to the user.</p>
         <h2>Links</h2>
-        <p>Check out the published project here: <a href="http://coffeeverse.herokuapp.com/">Coffeeverse website</a></p>
-        <p>Or my GitHub repo for the project here: <a href="https://github.com/EviIoannou/coffeeverse">Coffeeverse GitHub</a></p>
+        <ul>
+            <li>Check out the published project: <a href="https://coffeverse.onrender.com/#/">Coffeeverse website</a>
+            </li>
+            <li>Try some of the enhanced features in my Figma prototype: <a
+                    href="https://www.figma.com/proto/wIUNW7xuDAS2L3O1o17gxA/Coffee-app-Prototype?page-id=0%3A1&type=design&node-id=1-2&viewport=135%2C134%2C0.08&t=vmIzhvWqclCem4HP-1&scaling=min-zoom&starting-point-node-id=1%3A2&mode=design">Hi-fi
+                    prototype</a></li>
+            <li>Or visit my GitHub repo for the project: <a href="https://github.com/EviIoannou/coffeeverse">Coffeeverse
+                    GitHub</a></p>
+            </li>
+        </ul>
     </div>
 
     <!-- Footer -->
@@ -110,4 +151,5 @@
     </footer>
     <script src="../js/index.js"></script>
 </body>
+
 </html>

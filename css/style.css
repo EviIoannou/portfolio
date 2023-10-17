@@ -15,8 +15,8 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd; 
-    --clr-accent-dark: #10806d; 
+    --clr-accent: #16e0bd;
+    --clr-accent-dark: #10806d;
     --clr-accent-link: #1dbea3;
 
     --fs-h1: 3rem;
@@ -24,8 +24,8 @@
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --box-s: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    --box-s: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
 @media (min-width: 800px) {
@@ -87,6 +87,7 @@ strong {
 .btn:hover {
     transform: scale(1.1);
 }
+
 /* Typography */
 h1,
 h2,
@@ -95,11 +96,19 @@ h3 {
     margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
+h1 {
+    font-size: var(--fs-h1)
+}
 
-.section__title{
+h2 {
+    font-size: var(--fs-h2)
+}
+
+h3 {
+    font-size: var(--fs-h3)
+}
+
+.section__title {
     margin-bottom: .25em;
 }
 
@@ -111,7 +120,7 @@ h3 { font-size: var(--fs-h3) }
     display: block;
 }
 
-.section__subtitle{
+.section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
 }
@@ -207,10 +216,12 @@ header {
 .nav-open .hamburger::after {
     opacity: 0;
 }
+
 .hamburger {
     display: block;
     position: relative;
 }
+
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -229,33 +240,43 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before {
+    top: 6px;
+}
+
+.hamburger::after {
+    bottom: 6px;
+}
+
 /* Intro section */
 
 .intro {
     position: relative;
 }
+
 .intro__img {
     box-shadow: var(--box-s);
 }
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
-        grid-template-areas: 
+        grid-template-areas:
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
     }
-    .intro__img{
+
+    .intro__img {
         grid-area: img;
         min-width: 250px;
         position: relative;
-        z-index: 2; 
+        z-index: 2;
     }
+
     .section__subtitle--intro {
         align-self: start;
         grid-column: -1 / 1;
@@ -301,9 +322,13 @@ header {
 .service {
     max-width: 300px;
     margin: 0 auto;
-} .service p {
+}
+
+.service p {
     text-align: left;
-} .service h3 {
+}
+
+.service h3 {
     width: auto;
 }
 
@@ -315,7 +340,7 @@ header {
         margin-right: auto;
     }
 
-    .service + .service {
+    .service+.service {
         margin-left: 2em;
     }
 }
@@ -329,21 +354,23 @@ header {
 .about-me__img {
     box-shadow: var(--box-s);
 }
+
 @media (min-width:600px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
-        grid-template-areas: 
+        grid-template-areas:
             "title img"
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
     }
+
     .section__title--about {
         grid-area: title;
     }
 
-    .section__subtitle--about{
+    .section__subtitle--about {
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
@@ -383,7 +410,7 @@ header {
     text-decoration: none;
 }
 
-.portfolio__item h3{
+.portfolio__item h3 {
     background: var(--clr-accent-dark);
     border-radius: 0.3em;
     color: var(--clr-light);
@@ -394,7 +421,7 @@ header {
     z-index: 3;
 }
 
-.portfolio__item h4{
+.portfolio__item h4 {
     background: var(--clr-light);
     border-radius: 0.3em;
     color: var(--clr-accent-dark);
@@ -406,9 +433,9 @@ header {
 }
 
 .portfolio__img {
-    transition: 
-    transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
+    transition:
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
 }
 
 .portfolio__item:focus {
@@ -439,6 +466,7 @@ header {
 .footer__link {
     font-weight: var(--fw-bold);
 }
+
 .footer__link:hover,
 .social-list__link:hover {
     opacity: .7;
@@ -470,12 +498,15 @@ header {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .portfolio-item-individual h2 {
     font-size: var(--fs-h3);
 }
-.portfolio-item-individual p, 
-    .portfolio-item-individual h2,
-    .portfolio-item-individual ul{
+
+.portfolio-item-individual p,
+.portfolio-item-individual h2,
+.portfolio-item-individual ul,
+.portfolio-item-individual ol {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
