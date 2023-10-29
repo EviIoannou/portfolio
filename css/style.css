@@ -506,7 +506,8 @@ header {
 .portfolio-item-individual p,
 .portfolio-item-individual h2,
 .portfolio-item-individual ul,
-.portfolio-item-individual ol {
+.portfolio-item-individual ol,
+.portfolio-item-individual img {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
